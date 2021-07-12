@@ -56,7 +56,7 @@ class Image {
                         put(MediaStore.MediaColumns.DISPLAY_NAME, Environment.DIRECTORY_PICTURES)
                     }
 
-                    var imageUri: Uri? =
+                    val imageUri: Uri? =
                         resolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues)
 
                     fos = imageUri?.let {
