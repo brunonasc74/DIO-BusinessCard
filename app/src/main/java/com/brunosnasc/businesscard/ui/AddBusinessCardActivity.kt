@@ -11,5 +11,17 @@ class AddBusinessCardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        insertListener()
+    }
+
+    private fun insertListener() {
+        binding.btnClose.setOnClickListener {
+            finish()
+        }
+
+        binding.btnConfirm.setOnClickListener {
+
+
+        }
     }
 }
